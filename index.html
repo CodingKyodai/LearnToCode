@@ -1,141 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnToCode | MakeCode Arcade & ScratchJr Tutorials</title>
+    <title>Learn Coding with Coding Kyodai</title>
     <style>
-        /* Brand Colors */
-        :root {
-            --primary: #a1fa89;  /* Light Green */
-            --secondary: #2ee5e8; /* Teal */
-            --accent: #f169cf;    /* Pink */
-            --highlight: #fdfa17; /* Yellow */
-            --black: #000000;    /* Black */
-            --white: #ffffff;     /* White */
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--black);
-            color: var(--white);
-            line-height: 1.6;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background-color: var(--primary);
-            padding: 20px;
-            border-radius: 10px;
+        body { 
+            margin: 0; 
+            font-family: Arial; 
             text-align: center;
-            margin-bottom: 30px;
         }
-        
-        .logo {
-            height: 100px;
-            margin-bottom: 15px;
-        }
-        
-        h1, h2 {
-            color: var(--black);
-        }
-        
-        .video-container {
-            background-color: var(--black);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            text-align: center;
-            border: 2px solid var(--secondary);
-        }
-        
-        .downloads {
-            background-color: var(--secondary);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-        
-        .downloads a {
-            color: var(--black);
-            font-weight: bold;
-        }
-        
-        .signup {
-            background-color: var(--accent);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 30px 0;
-        }
-        
-        button {
-            background-color: var(--highlight);
-            color: var(--black);
-            border: none;
+        .pdf-button {
+            background: #a1fa89; /* Your green */
+            color: #000000;
             padding: 10px 20px;
+            text-decoration: none;
             border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        
-        button:hover {
-            transform: scale(1.05);
-        }
-        
-        input[type="email"] {
-            padding: 10px;
-            width: 250px;
-            border-radius: 5px;
-            border: none;
-            margin-right: 10px;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            color: var(--white);
-            opacity: 0.8;
+            display: inline-block;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <!-- Replace 'logo.png' with your actual logo filename -->
-        <img src="Coding Kyodai Logo (2).png" alt="LearnToCode Logo" class="logo">
-        <h1>Learn MakeCode Arcade & ScratchJr</h1>
-        <p>Free coding tutorials for educators and students</p>
-    </header>
+    <!-- Your Canva Design (Full-Page Image) -->
+    <img src="website-design.png" style="width:100%;">
 
-    <!-- Embedded Video Section -->
-    <div class="video-container">
-        <h2>Latest Video Tutorial</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- PDF Download Links (Add under your Canva buttons) -->
+    <div>
+        <a href="pdfs/scratchjr-guide.pdf" class="pdf-button" download>Download ScratchJr Guide</a>
+        <a href="pdfs/makecode-guide.pdf" class="pdf-button" download>Download MakeCode Guide</a>
     </div>
 
-    <!-- PDF Downloads Section -->
-    <div class="downloads">
-        <h2>Free PDF Guides</h2>
-        <ul>
-            <li><a href="pdfs/guide1.pdf" download>MakeCode Arcade Beginner's Guide</a></li>
-            <li><a href="pdfs/guide2.pdf" download>ScratchJr Lesson Plans</a></li>
-        </ul>
-    </div>
-
-    <!-- Email Signup Form -->
-    <div class="signup">
-        <h2>Get Updates</h2>
-        <p>Join our mailing list for new tutorials and resources!</p>
-        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-            <input type="email" name="email" placeholder="Your email address" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-
-    <footer>
-        <p>© 2023 LearnToCode. All rights reserved.</p>
-    </footer>
+    <!-- YouTube Video Embed (Replace YOUR_VIDEO_ID) -->
+    <iframe width="80%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
