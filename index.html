@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Learn Coding with Coding Kyodai</title>
+    <title>CodingKyodai | Learn Coding</title>
     <style>
         body { 
             margin: 0; 
-            font-family: Arial; 
+            font-family: Arial;
             text-align: center;
         }
-        .pdf-button {
-            background: #a1fa89; /* Your green */
-            color: #000000;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px;
+        .fallback-links {
+            display: none; /* Hide on desktop (image map will work) */
+        }
+        @media (max-width: 768px) {
+            /* Show buttons on mobile */
+            .fallback-links { display: block; }
+            img[usemap] { display: none; }
         }
     </style>
 </head>
 <body>
-    <!-- Your Canva Design (Full-Page Image) -->
-  <img src="HomePage 1.png" usemap="#image-map">
+    <!-- Interactive Canva Image -->
+    <img src="HomePage1.png" usemap="#canvamap" style="width:100%; max-width:1200px;">
 
-<map name="image-map">
-    <area target="" alt="Learning" title="Learning" href="" coords="656,350,407,80" shape="rect">
-    <area target="" alt="Curriculum" title="Curriculum" href="" coords="711,85,958,361" shape="rect">
-    <area target="" alt="About Us" title="About Us" href="" coords="1009,84,1260,357" shape="rect">
-    <area target="" alt="Videos" title="Videos" href="" coords="411,413,655,690" shape="rect">
-    <area target="" alt="Research" title="Research" href="" coords="713,412,953,691" shape="rect">
-    <area target="" alt="Caring" title="Caring" href="" coords="1012,411,1254,688" shape="rect">
-</map>
+    <!-- Image Map (Links for desktop) -->
+    <map name="canvamap">
+        <!-- "Learning" Button -->
+        <area shape="rect" coords="100,200,300,250" href="learning.html" alt="Learning">
+        <!-- "Curriculum" Button -->
+        <area shape="rect" coords="350,200,550,250" href="curriculum.html" alt="Curriculum">
+        <!-- "About Us" Button -->
+        <area shape="rect" coords="600,200,800,250" href="about.html" alt="About Us">
+        <!-- "Videos" Button -->
+        <area shape="rect" coords="100,400,300,450" href="videos.html" alt="Videos">
+        <!-- "Research" Button -->
+        <area shape="rect" coords="350,400,550,450" href="research.html" alt="Research">
+        <!-- "Caring" Button -->
+        <area shape="rect" coords="600,400,800,450" href="caring.html" alt="Caring">
+    </map>
 
-    <!-- PDF Download Links (Add under your Canva buttons) -->
-    <div>
-        <a href="pdfs/scratchjr-guide.pdf" class="pdf-button" download>Download ScratchJr Guide</a>
-        <a href="pdfs/makecode-guide.pdf" class="pdf-button" download>Download MakeCode Guide</a>
+    <!-- Fallback Links (for mobile) -->
+    <div class="fallback-links">
+        <a href="learning.html" class="button">Learning</a>
+        <a href="curriculum.html" class="button">Curriculum</a>
+        <a href="about.html" class="button">About Us</a><br>
+        <a href="videos.html" class="button">Videos</a>
+        <a href="research.html" class="button">Research</a>
+        <a href="caring.html" class="button">Caring</a>
     </div>
-
-    <!-- YouTube Video Embed (Replace YOUR_VIDEO_ID) -->
-    <iframe width="80%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 </body>
 </html>
